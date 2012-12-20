@@ -1,3 +1,9 @@
+
+Learn Clojure the Hard way to learn clojure personally.
+
+Contribute/Original Learn X the Hard Way Setup
+==============================================
+
 This is a starter project for people looking to make a "Learn X The Hard Way"
 book.  If you want to have a book for your favorite language, and you like the
 style of "Learn Python The Hard Way" and "Learn Ruby The Hard Way", then this
@@ -9,7 +15,7 @@ self-published text.  It does require you to learn LaTeX, but I'll be including
 a crash course in LaTeX that uses the features of this book kit.
 
 Getting Started
-===============
+
 
 First thing is, you should install both tex-live and dexy.
 
@@ -31,7 +37,7 @@ into output/book-final.pdf.  Go look at that book and see what is produced.
 
 
 Setting Up Your Book
-====================
+--------------------
 
 You should now probably setup whatever revision control tool you need to use.
 If you want to keep using git, then I suggest doing:
@@ -55,7 +61,7 @@ Here's what you need to change:
 Make the book again and check the resulting book-final.pdf to see your title.
 
 Structure And Initial Content
-=============================
+-----------------------------
 
 Now you can lay down your structure and introduction.  Here's what I suggest.
 
@@ -71,7 +77,7 @@ your exercises.  This will tell you if you've got it simple enough.
 
 
 Recommended Contents
-====================
+--------------------
 
 I recommend for your ex0.tex install instructions you focus on the following:
 
@@ -100,7 +106,7 @@ encourage your readers to try to learn as it will reduce their "code anxiety".
 
 
 Working With Dexy
-=================
+-----------------
 
 Dexy is fairly new, but a very good tool for this kind of work.  What it does
 is take code for your exercises and then injects it into your .tex files in a
@@ -124,7 +130,7 @@ Refer to http://dexy.it for more information on how to use it.
 
 
 Working With Tex
-================
+----------------
 
 TeX (or actually LaTeX) may seem daunting compared to markdown or textile, but
 it's actually fairly easy.  Get yourself one of the many LaTeX cheat-sheets out
@@ -141,20 +147,16 @@ anything you can find about it.
 
 
 Last Steps
-==========
+----------
 
 Once you've got your voice and initial setup, I recommend that you go through
 and setup all the titles and the big structure of your book.  Look at LPTHW to
 get a general idea of a good structure.  Here it is in a short form:
 
 1. Two sections split at 26 exercises.
-2. First half is repetitive interactions with the computer that are immediate, with heavy
-focus on functions and no objects, complex data structures, algorithms, or math.
-3. Second half is a sudden ramp-up in difficulty that teaches logic, OOP, data structures,
-and the more complex things your language features.
-4. Focus on simple text adventure games as the main kind of program they make.  These are
-fun, easy to create, immediate, and don't require any special geometry skills or graphics
-systems.
+2. First half is repetitive interactions with the computer that are immediate, with heavy focus on functions and no objects, complex data structures, algorithms, or math.
+3. Second half is a sudden ramp-up in difficulty that teaches logic, OOP, data structures, and the more complex things your language features.
+4. Focus on simple text adventure games as the main kind of program they make.  These are fun, easy to create, immediate, and don't require any special geometry skills or graphics systems.
 
 The way to think of the book's structure is the first half gets them strong,
 the second half gets them skills.  In the first half they're just doing
@@ -175,7 +177,7 @@ keep you motivated and organized.
 
 
 Publishing Your Book
-====================
+--------------------
 
 If you want help publishing or promoting your book, then contact me at
 zedshaw-AT-zedshaw.com.
