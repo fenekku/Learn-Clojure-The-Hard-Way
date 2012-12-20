@@ -4,4 +4,6 @@ logs/*
 output-long/*
 output/*
 .*.sw*
-
+*.aux
+*.log
+*.fdb_latexmk
