@@ -15,21 +15,21 @@ self-published text.  It does require you to learn LaTeX, but I'll be including
 a crash course in LaTeX that uses the features of this book kit.
 
 Getting Started
-
+---------------
 
 First thing is, you should install both tex-live and dexy.
 
 To install tex-live, follow the quick instructions [here](http://www.tug.org/texlive/quickinstall.html).
 
-As for dexy, make sure you have python installed, and then simply
+As for dexy, make sure you have python installed, and then simply::
 
     $ easy_install dexy
 
 You may or may not need sudo. If this doesn't work for you, check the instructions on [Dexy's site](http://dexy.it).
 
-Once you have those, try this:
+Once you have those, try this::
 
-  $ dexy --setup
+  $ dexy setup
   $ make
 
 This will produce all the gear for dexy, and then build the sample starter book
@@ -40,7 +40,7 @@ Setting Up Your Book
 --------------------
 
 You should now probably setup whatever revision control tool you need to use.
-If you want to keep using git, then I suggest doing:
+If you want to keep using git, then I suggest doing::
 
   $ rm -rf .git
   $ make clean
@@ -82,27 +82,25 @@ Recommended Contents
 I recommend for your ex0.tex install instructions you focus on the following:
 
 1. Use just a simple editor like gedit, notepad+, or Textwrangler.  NO vim! NO emacs!
+
 2. Do *not* have them use git or other RCS tools. They're here to learn code, not git.
+
 3. Make it work for Windows, OSX, and Linux if you can.
+
 4. The install of your language should not involve tons of steps.
 
 For your introduction, and for the whole rest of the book, remember these
 points:
 
-1. Your book should *educate* people, not *indoctrinate* them.  If you find
-yourself talking constantly about how awesome your language is and how it will
-change their life, then you're not educating, you're just making another cult
-follower.  Leave the decision of whether the language is good to the reader.
-2. Read through my Introduction and give advice for learning, especially persistence and
-how the book is *supposed* to be hard and tedious at first.
-3. Be honest about flaws and problems in your language so the reader is not discouraged
-when they encounter them.
-4. Lightly make fun of programmers and inoculate your student against religious wars
-over syntax, idioms, editors, tools, and anything else that gets in the way of them 
-learning.  Remember, you are writing this book for *them*, not your fellow coder 
-friends.
-5. Make it clear that programmers are not scary geniuses.  This goes a long way to
-encourage your readers to try to learn as it will reduce their "code anxiety".
+1. Your book should *educate* people, not *indoctrinate* them.  If you find yourself talking constantly about how awesome your language is and how it will change their life, then you're not educating, you're just making another cult follower.  Leave the decision of whether the language is good to the reader.
+
+2. Read through my Introduction and give advice for learning, especially persistence and how the book is *supposed* to be hard and tedious at first.
+
+3. Be honest about flaws and problems in your language so the reader is not discouraged when they encounter them.
+
+4. Lightly make fun of programmers and inoculate your student against religious wars over syntax, idioms, editors, tools, and anything else that gets in the way of them learning.  Remember, you are writing this book for *them*, not your fellow coder friends.
+
+5. Make it clear that programmers are not scary geniuses.  This goes a long way to encourage your readers to try to learn as it will reduce their "code anxiety".
 
 
 Working With Dexy
@@ -112,19 +110,13 @@ Dexy is fairly new, but a very good tool for this kind of work.  What it does
 is take code for your exercises and then injects it into your .tex files in a
 nice pretty printed format that's publication ready.  You use it like this:
 
-1. Edit the .dexy file and put your language extension in there like I've got.
-The syntax is FILENAME_PATTERN|FILTER1|FILTER2, etc.  For mine, I'm mostly using
-the pyg(pygmentize) filter.  For python, it looks like this: "*.py|pyg|l": {}.  *.py
-is the pattern of files to convert, pyg is the pygmentize filter for highlting code
-and "l" is the filter for converting to LaTex.  
-2. Put your code for each exercise in code/ named after each exercise.
+1. Edit the .dexy file and put your language extension in there like I've got. The syntax is FILENAME_PATTERN|FILTER1|FILTER2, etc.  For mine, I'm mostly using the pyg(pygmentize) filter.  For python, it looks like this: ``"*.py|pyg|l": {}``. ``*.py`` is the pattern of files to convert, ``pyg`` is the pygmentize filter for highlting code and ``l`` is the filter for converting to LaTex.  
+
+2. Put your code for each exercise in ``code/`` named after each exercise.
+
 3. Look at the ex0.tex that I've written which shows you how to include this code.
-4. Finally, if you want to show the output of your programs, there are two ways to
-do this.  If you want to use dexy, you can create another entry in .dexy like this:
-"*.py|py|pyg|l".  This means, run the code through python (py), then pass the result
-to pyg (if you are generating HTML or xml or whatever it will be highlighted), and
-finally, pass to the LaTeX filter.  The other low tech way is simply to put the output for each program into code as ex#.txt and 
-include that as well. ex0.tex has both.
+
+4. Finally, if you want to show the output of your programs, there are two ways to do this.  If you want to use dexy, you can create another entry in .dexy like this: ``*.py|py|pyg|l``.  This means, run the code through python (py), then pass the result to pyg (if you are generating HTML or xml or whatever it will be highlighted), and finally, pass to the LaTeX filter.  The other low tech way is simply to put the output for each program into code as ex#.txt and include that as well. ex0.tex has both.
 
 Refer to http://dexy.it for more information on how to use it.
 
@@ -137,7 +129,7 @@ it's actually fairly easy.  Get yourself one of the many LaTeX cheat-sheets out
 there and sit down with it to write.  The things to remember are:
 
 1. TeX assumes anything not marked up is just a paragraph of text. Write like normal.
-2. Block style things, like lists and code blocks, are bounded by \begin{thing} and \end{thing}.
+2. Block style things, like lists and code blocks, are bounded by ``\begin{thing}`` and ``\end{thing}``.
 3. Look in commands.tex for a list of available blocks and helpers I've already written.
 4. Write your own helpers for things you seem to write over and over again.
 
