@@ -1,5 +1,6 @@
 
 Learn Clojure the Hard way to learn clojure personally.
+It's more or less a translation of Learn Ruby the Hard Way into Clojure at first.
 
 Contribute/Original Learn X the Hard Way Setup
 ==============================================
