@@ -1,3 +1,52 @@
-\chapter{Exercise 3: More Stuff}
+\chapter{Exercise 3: Math and Notation}
 
+You write code to do operations on data. Multiplication, addition, substraction,
+modulo (look that one up if you don't know what it means) and many other such terms make up some of these operations. They are mathematical operations and thankfully Clojure can do Math (it wouldn't be very interesting if it couldn't now would it?). 
+
+Here is how you add two numbers in Clojure:
+\begin{code}{ex3-1.clj}
+<< d['code/ex3-1.clj|pyg|l'] >>
+\end{code}
+
+Type the following in a file and see what it does. It might be confusing with the
+strange order and the parentheses, but I will explain after you've typed it.
+
+\begin{code}{ex3-2.clj}
+<< d['code/ex3-2.clj|pyg|l'] >>
+\end{code}
+
+What you should see:
+
+\begin{code}{Running ex3-2.clj}
+\begin{Verbatim}
+$ clojure ex2.clj 
+I will now count my chickens:
+Hens 30
+Roosters 25
+Is it true that 3 + 2 < 5 - 7?
+false
+What is 3 + 2? 5
+What is 5 - 7? -2
+Oh, that's why it's false.
+How about some more.
+Is it greater? true
+Is it greater or equal? true
+Is it less or equal? false
+\end{Verbatim}
+\end{code}
+
+I actually won't talk about the parentheses just yet. 
+
+Let's talk a bit about the mathematical notation before we go on though. It's 
+different than what you are used to in your math class or in other programming 
+languages. You would usually write \shell{2 + 4} and not \clojure{(+ 2 4)}. What 
+you learned in Math class is called {\em infix} notation. As the name implies it's 
+notation where the operator is {\bf in-place} as opposed to {\em prefix} notation 
+where the operator is {\bf pre-placed} like in Clojure and most other Lisp dialects.
+
+This might take some getting used to. It is definitely one of the most seemingly bizarre thing about languages like Clojure.
+
+But here is a trick and a rationale rolled up into one: think about how you talk about these operations. I read \shell{a / b} as "a divided by b". Without getting too much into linguistics you can agree that "a" is emphasized here. Now read \clojure{/ a b}. You should read it as something similar to "divide a by b". Where is the emphasis here? On the "divide" operation. And here it is. Lisp languages emphasize the operator over the things being operated on. It's a very action-based language.
+
+So now go back and read the operations above using this trick. It won't sound so strange anymore.
 
