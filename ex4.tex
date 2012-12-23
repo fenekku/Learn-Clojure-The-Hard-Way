@@ -1,3 +1,53 @@
-\chapter{Exercise 4}
+\chapter{Exercise 4 : Collections}
+
+You have dealt so far with two important data types: numbers and strings. The latter is what programmers call a sequence of characters enclosed in double quotes. You were printing strings out when calling (println "Hello World").
+
+It is now time to look at the four other most important data types in Clojure:
+lists, vectors, sets and maps.
+
+Type the following:
+\begin{code}{ex4-1.clj}
+<< d['code/ex4-1.clj|pyg|l'] >>
+\end{code} 
+
+What you should see:
+
+\begin{code}{Running ex4-1.clj}
+\begin{Verbatim}
+$ clojure ex4-1.clj 
+(1 2 3)
+(1 2 3)
+[1 2 3]
+[1 2 3]
+[1 2 3]
+#{is weird This}
+#{is weird This}
+#{1 2}
+{:key2 value2, :key1 value1}
+{:key2 value2, :key1 value1}
+\end{Verbatim}
+\end{code}
+
+Let's break it down.
+
+{\bf Lists}
+
+A list as its name implies is just a sequence of elements. You can think of lists as being implemented by a linked list under the hood. If you don't know what that means look it up. This is why there are also vectors.
+
+{\bf Vectors}
+
+A vector is also a sequence of elements, but it is akin to an array in C or Ruby. 
+Vectors are efficient for random access but not so much for updates.
+
+{\bf Sets}
+
+A set is just like a set in Math: a collection of unique elements. There is no order in a set apriori (but look carefully, can you find the order Clojure uses?) 
+Sets are useful for doing set operations and the like. We'll see those soon!
+
+{\bf Maps}
+
+A map is an association of keys with values. They are the equivalent of a dict in Python or a HashMap in Java (humhumhum).
+
+
 
 
