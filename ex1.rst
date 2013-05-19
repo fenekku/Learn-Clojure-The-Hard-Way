@@ -13,10 +13,15 @@ Type the code one line at a time.
 
 Here is the output you will see.
 
-{{ d['code/ex1.clj|clj']|indent(4) }}
+::
+
+    {{ d['code/ex1.clj|clj']|indent(4) }}
 
 This was an important step. Now you know how to run code one line at a time.
 This will come in handy.
 
 For the rest of the book we will be passing whole files
-to the interpreter though. We will see how this is done in the next chapters.
+to the interpreter though. We will see how this is done in the next chapter.
+You know how to run individual pieces of code now. Whenever you want to
+figure out what should be returned by your code, don't hesitate to go
+back to this interactive mode.
