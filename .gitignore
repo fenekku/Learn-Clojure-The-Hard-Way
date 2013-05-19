@@ -7,3 +7,4 @@ output/*
 *.aux
 *.log
 *.fdb_latexmk
+.cache/
