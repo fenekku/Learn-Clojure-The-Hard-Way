@@ -52,10 +52,10 @@ Linux what you should see
     $ clojure
     Clojure 1.4.0
     user=>
-    ;; EXIT with ^D
+    ; EXIT with ^D
     $ mkdir mystuff
     $ cd mystuff
-    ;; ... Use gedit here to edit test.txt ...
+    ; ... Use gedit here to edit test.txt ...
     $ ls
     test.txt
 
