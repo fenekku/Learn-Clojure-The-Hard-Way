@@ -1,0 +1,10 @@
+(1 2 3)
+(1 2 3)
+[1 2 3]
+[1 2 3]
+[1 2 3]
+#{is weird This}
+#{is weird This}
+#{1 2}
+{:key2 value2, :key1 value1}
+{:key2 value2, :key1 value1}
