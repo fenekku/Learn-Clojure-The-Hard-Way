@@ -1,6 +1,6 @@
 {% import "macros/ork.jinja" as ork with context %}
 Learn Clojure The Hard Way
-********************
+**************************
 
 
 Table Of Contents
