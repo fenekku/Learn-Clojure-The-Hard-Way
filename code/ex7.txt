@@ -1,0 +1,5 @@
+2013-05-23 :: INFO :: Something Happened
+2013-05-25 :: WARNING :: The singularity has been achieved
+2013-05-25 :: WARNING :: The end of the world as we know it has been achieved
+Version1.3.0
+Version1.3.0
