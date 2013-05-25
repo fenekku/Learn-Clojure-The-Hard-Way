@@ -8,14 +8,14 @@ Table Of Contents
 
 * `Preface <preface.html>`_
 * `Introduction <introduction.html>`_
-* `Exercise 0 <ex0.html>`_
-* `Exercise 1 <ex1.html>`_
-* `Exercise 2 <ex2.html>`_
-* `Exercise 3 <ex3.html>`_
-* `Exercise 4 <ex4.html>`_
-* `Exercise 5 <ex5.html>`_
-* `Exercise 6 <ex6.html>`_
-* `Exercise 7 <ex7.html>`_
+* `Exercise 0 : The Setup <ex0.html>`_
+* `Exercise 1 : Printing <ex1.html>`_
+* `Exercise 2 : Code files <ex2.html>`_
+* `Exercise 3 : Math <ex3.html>`_
+* `Exercise 4 : Collections <ex4.html>`_
+* `Exercise 5 : Operations on Collections <ex5.html>`_
+* `Exercise 6 : Defining <ex6.html>`_
+* `Exercise 7 : More Strings <ex7.html>`_
 * `Exercise 8 <ex8.html>`_
 * `Exercise 9 <ex9.html>`_
 * `Exercise 10 <ex10.html>`_
